@@ -31,5 +31,21 @@
   font-size: 22px;
   line-height: 30px;
   text-transform: uppercase;
+}
 
+.header__btn:hover {
+  background: #6C0287;
+  border: 3px solid #6C0287;
+  border-radius: 10px;
+}
+
+.header__btn:active {
+  background: #640AA3;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+.header__btn:focus {
+  background: #6C0287;
+  border-radius: 10px;
 }

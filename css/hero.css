@@ -88,6 +88,23 @@
   border: none;
 }
 
+.hero__btn:hover {
+  background: #840AA3;
+  border-radius: 10px;
+}
+
+
+
+.hero__btn:focus {
+  background: #840AA3;
+  border-radius: 10px;
+}
+
+.hero__btn:active {
+  background: #640AA3;
+  border-radius: 10px;
+}
+
 .hero__link {
   position: relative;
 }
@@ -98,4 +115,18 @@
   left: 539px;
   top: 634px;
   z-index: 3;
+}
+
+.hero__link:hover:before {
+  content: url("../img/down_hover.svg");
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.hero__link:active:before {
+  content: url("../img/down_active.svg");
+  background: #CD06FF;
+  border: 1px solid #CD06FF;
+  border-radius: 50%;
 }

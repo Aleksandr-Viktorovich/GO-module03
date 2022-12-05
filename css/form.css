@@ -36,6 +36,24 @@
   border: none;
 }
 
+.form__btn-room:hover {
+  background: #EADEED;
+  border: 3px solid #640AA3;
+  border-radius: 8px;
+}
+
+.form__btn-room:focus {
+  background: #FFFFFF;
+  border: 3px solid #640AA3;
+  border-radius: 8px;
+}
+
+.form__btn-room:active {
+  background: #6C0287;
+  border: 3px solid #FFFFFF;
+  border-radius: 8px;
+}
+
 .form__btn {
   display: flex;
   justify-content: space-between;
@@ -115,4 +133,26 @@
   border: none;
   margin-left: 731px;
   margin-bottom: 72px;
+}
+
+.form__button:hover {
+  background: #EADEED;
+  border: 3px solid #6C0287;
+  border-radius: 10px;
+}
+
+.form__button:focus {
+  background: #FFFFFF;
+  border: 3px solid #6C0287;
+  border-radius: 10px;
+}
+
+.form__button:active {
+  background: #EADEED;
+  border-radius: 10px;
+}
+
+.form__input:focus {
+  background: #FFFFFF;
+  border: 2px solid #CD06FF;
 }

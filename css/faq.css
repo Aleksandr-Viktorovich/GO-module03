@@ -27,6 +27,14 @@
   height: 46px;
 }
 
+.faq__list-item:hover:after {
+  content: url("../img/open_hover.svg");
+}
+
+.faq__list-item:active:after {
+  content: url("../img/close.svg");
+}
+
 .faq__list-item:nth-child(2n)::after {
   content: url(../img/open.svg);
   background-repeat: no-repeat;
@@ -35,6 +43,14 @@
   bottom: 25px;
   width: 46px;
   height: 46px;
+}
+
+.faq__list-item:hover:nth-child(2n)::after {
+  content: url(../img/openhover.svg);
+}
+
+.faq__list-item:active:nth-child(2n)::after {
+  content: url(../img/openactive.svg);
 }
 
 .faq__list-item {
