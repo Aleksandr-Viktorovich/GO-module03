@@ -1,0 +1,71 @@
+.footer {
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+
+}
+
+.footer__contacts {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.footer__contacts-item {
+  padding-left: 65px;
+  padding-bottom: 39px;
+  background-position: 0 17px;
+}
+
+.footer__location {
+  display: block;
+}
+
+.footer__contacts-item {
+  background-image: url("../img/location.svg");
+  background-repeat: no-repeat;
+}
+
+.footer__item-phone {
+  background-image: url("../img/phone-call.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -3px;
+  padding-left: 65px;
+  margin-bottom: 11px;
+}
+
+.footer__item-mail {
+  background-image: url("../img/Group.svg");
+  background-repeat: no-repeat;
+  padding-left: 65px;
+}
+
+.footer__list-social {
+  display: flex;
+  gap: 27px;
+}
+
+.footer__link-social {
+  display: inline-block;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 156px;
+}
+
+.footer__contacts-list {
+  margin-bottom: 63px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}

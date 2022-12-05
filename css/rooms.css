@@ -1,0 +1,40 @@
+.rooms__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.rooms-star{
+  background-image: url("../img/starwars.jpg");
+  width: 580px;
+  height: 349px;
+}
+
+.rooms-west {
+  background-image: url("../img/west.jpg");
+  width: 580px;
+  height: 349px;
+}
+
+.rooms-neon {
+  background-image: url("../img/neon.jpg");
+  width: 580px;
+  height: 349px;
+}
+
+.rooms-vibe {
+  background-image: url("../img/80.jpg");
+  width: 580px;
+  height: 349px;
+}
+
+.room {
+  padding-top: 275px;
+}
+
+.rooms__name-text {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  text-align: center;
+}

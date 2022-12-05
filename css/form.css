@@ -1,0 +1,118 @@
+.form {
+  padding-top: 60px;
+  padding-bottom: 0;
+  background-color: #440F51;
+}
+
+.form__wrapper {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.form__title {
+  border: none;
+  padding: 10px 17px;
+  margin-bottom: 60px;
+}
+
+.form__name {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.form__btn-room {
+  padding: 7px 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  border: none;
+}
+
+.form__btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__kit-enterteiment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__kit {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__kit-title {
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.form__input-kit {
+  margin-bottom: 20px;
+}
+
+.form__title-date {
+  margin-top: 15px;
+}
+
+.form__title-forms {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__input-name {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__man {
+  display: block;
+}
+
+.form__input {
+  width: 280px;
+  height: 52px;
+}
+
+.form__input-date {
+  width: 134px;
+  margin-bottom: 36px;
+}
+
+.form__input-contacts {
+  margin-right: 27px;
+}
+
+.form__input-one {
+  margin-bottom: 14px;
+}
+
+.form__input-two {
+  width: 300px;
+}
+
+.form__button {
+  padding: 16px 50px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6C0287;
+  border-radius: 10px;
+  border: none;
+  margin-left: 731px;
+  margin-bottom: 72px;
+}
