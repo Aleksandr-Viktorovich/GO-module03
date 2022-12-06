@@ -51,7 +51,7 @@
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 156px;
+  margin-bottom: 156px;
 }
 
 .footer__contacts-list {

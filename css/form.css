@@ -1,7 +1,11 @@
 .form {
-  padding-top: 60px;
-  padding-bottom: 0;
+
+  padding-bottom: 60px;
+}
+
+.form__wrapper-one {
   background-color: #440F51;
+  padding-top: 60px;
 }
 
 .form__wrapper {
@@ -12,7 +16,6 @@
 .form__title {
   border: none;
   padding: 10px 17px;
-  margin-bottom: 60px;
 }
 
 .form__name {

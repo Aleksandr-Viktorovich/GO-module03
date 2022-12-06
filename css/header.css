@@ -1,12 +1,13 @@
 .header {
   margin-bottom: 58px;
+  padding-top: 38px;
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 38px;
+
 }
 
 .header__list {
