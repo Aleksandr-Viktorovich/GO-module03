@@ -16,11 +16,22 @@
   gap: 40px 20px;
 }
 
+.friends__item {
+  transition-duration: .4s;
+  transition-property: transform;
+}
+
+.friends__item:hover {
+  transform: scale(1.1);
+}
+
 .friends__vr {
   background-image: url("../img/vrgl.png");
   background-repeat: no-repeat;
   width: 380px;
   height: 228px;
+
+
 }
 
 .friends__audio {
