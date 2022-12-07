@@ -25,6 +25,7 @@
   bottom: 25px;
   width: 46px;
   height: 46px;
+  transition-duration: .4s;
 }
 
 .faq__list-item:hover:after {
@@ -43,6 +44,7 @@
   bottom: 25px;
   width: 46px;
   height: 46px;
+  transition-duration: .4s;
 }
 
 .faq__list-item:hover:nth-child(2n)::after {

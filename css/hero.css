@@ -80,29 +80,31 @@
   text-transform: uppercase;
   border: none;
   margin-right: 165px;
+  transition-duration: .4s;
+  transition-property: background-color;
 }
 
 .hero__btn:hover {
-  background: #840AA3;
+  background-color: #840AA3;
   border-radius: 10px;
 }
 
 
 
 .hero__btn:focus {
-  background: #840AA3;
+  background-color: #840AA3;
   border-radius: 10px;
 }
 
 .hero__btn:active {
-  background: #640AA3;
+  background-color: #640AA3;
   border-radius: 10px;
 }
 
 .hero__link {
   position: absolute;
   z-index: 3;
+  color: #fff;
 }
-
 
 
