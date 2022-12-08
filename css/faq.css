@@ -22,7 +22,7 @@
   background-repeat: no-repeat;
   position: absolute;
   right: 50px;
-  bottom: 25px;
+  bottom: 20px;
   width: 46px;
   height: 46px;
   transition-duration: .4s;
@@ -41,7 +41,7 @@
   background-repeat: no-repeat;
   position: absolute;
   right: 50px;
-  bottom: 25px;
+  bottom: 20px;
   width: 46px;
   height: 46px;
   transition-duration: .4s;
@@ -55,6 +55,3 @@
   content: url(../img/openactive.svg);
 }
 
-.faq__list-item {
-  padding-top: 40px;
-}

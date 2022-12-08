@@ -4,10 +4,9 @@
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.friends__end {
-  display: block;
+  width: 880px;
+  margin: 0 auto;
+  margin-bottom: 41px;
 }
 
 .friends__list {

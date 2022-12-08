@@ -28,6 +28,10 @@
   margin-bottom: 65px;
 }
 
+.hero__box {
+  margin-bottom: 74px;
+}
+
 .hero__text-room {
   position: relative;
   width: 193px;
@@ -37,7 +41,6 @@
   display: inline-block;
   text-align: center;
   margin-right: 43px;
-  margin-bottom: 150px;
 }
 
 .hero__text {
@@ -79,7 +82,6 @@
   line-height: 30px;
   text-transform: uppercase;
   border: none;
-  margin-right: 165px;
   transition-duration: .4s;
   transition-property: background-color;
 }
@@ -102,9 +104,12 @@
 }
 
 .hero__link {
-  position: absolute;
+  position: relative;
   z-index: 3;
   color: #fff;
+  display: inline-block;
+  left: 161px;
+  top: 92px;
 }
 
 
