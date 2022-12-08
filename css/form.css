@@ -151,7 +151,7 @@
   text-transform: uppercase;
   color: #6C0287;
   border-radius: 10px;
-  border: none;
+  border: 3px solid transparent;
   margin-left: 780px;
   margin-bottom: 72px;
   transition-duration: .4s;
