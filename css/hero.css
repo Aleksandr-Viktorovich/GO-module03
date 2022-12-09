@@ -49,7 +49,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
-  color: #CD06FF;
+  color: var(--go-Color, #CD06FF);
   margin-right: 103px;
 }
 
@@ -59,7 +59,7 @@
   font-size: 75px;
   line-height: 106px;
   font-variant: small-caps;
-  color: #CD06FF;
+  color: var(--go-Color, #CD06FF);
 }
 
 .hero__text-equipment {
@@ -73,7 +73,7 @@
 }
 
 .hero__btn {
-  background: #6C0287;
+  background: var(--goColor, #6C0287);
   border-radius: 10px;
   padding: 25px 69px;
   color: #fff;
@@ -87,19 +87,19 @@
 }
 
 .hero__btn:hover {
-  background-color: #840AA3;
+  background-color: var(--heroColor, #840AA3);
   border-radius: 10px;
 }
 
 
 
 .hero__btn:focus {
-  background-color: #840AA3;
+  background-color: var(--heroColor, #840AA3);
   border-radius: 10px;
 }
 
 .hero__btn:active {
-  background-color: #640AA3;
+  background-color: var(--go-color, #640AA3);
   border-radius: 10px;
 }
 

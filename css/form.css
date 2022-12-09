@@ -44,18 +44,18 @@
 
 .form__btn-room:hover {
   background: #EADEED;
-  border: 3px solid #640AA3;
+  border: 3px solid var(--go-color, #640AA3);
   border-radius: 8px;
 }
 
 .form__btn-room:focus {
   background: #FFFFFF;
-  border: 3px solid #640AA3;
+  border: 3px solid var(--go-color, #640AA3);
   border-radius: 8px;
 }
 
 .form__btn-room:active {
-  background: #6C0287;
+  background: var(--goColor, #6C0287);
   border: 3px solid #FFFFFF;
   border-radius: 8px;
   color: #fff;
@@ -149,7 +149,7 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--goColor, #6C0287);;
   border-radius: 10px;
   border: 3px solid transparent;
   margin-left: 780px;
@@ -160,13 +160,13 @@
 
 .form__button:hover {
   background-color: #EADEED;
-  border: 3px solid #6C0287;
+  border: 3px solid var(--goColor, #6C0287);
   border-radius: 10px;
 }
 
 .form__button:focus {
   background-color: #FFFFFF;
-  border: 3px solid #6C0287;
+  border: 3px solid var(--goColor, #6C0287);
   border-radius: 10px;
 }
 
@@ -177,5 +177,5 @@
 
 .form__input:focus {
   background-color: #FFFFFF;
-  border: 2px solid #CD06FF;
+  border: 2px solid var(--go-Color, #CD06FF);
 }

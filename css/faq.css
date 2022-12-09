@@ -13,7 +13,7 @@
 }
 
 .faq__list-item:nth-child(2n) {
-  background-color: #440F51;
+  background-color: var(--faqColor, #440F51);
   color: #fff;
 }
 

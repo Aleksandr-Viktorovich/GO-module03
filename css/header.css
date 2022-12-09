@@ -29,7 +29,7 @@
   background-color: #1B1A1B;
   color: #fff;
   padding: 12px 32px;
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--go-Color, #CD06FF);
   border-radius: 10px;
   font-weight: 700;
   font-size: 22px;
@@ -40,20 +40,20 @@
 }
 
 .header__btn:hover {
-  background-color: #6C0287;
-  border: 3px solid #6C0287;
+  background-color: var(--goColor, #6C0287);
+  border: 3px solid var(--goColor, #6C0287);
   border-radius: 10px;
 }
 
 
 
 .header__btn:focus {
-  background-color: #6C0287;
+  background-color: var(--goColor, #6C0287);
   border-radius: 10px;
 }
 
 .header__btn:active {
-  background-color: #640AA3;
+  background-color: var(--go-color, #640AA3);
   border: 3px solid #000000;
   border-radius: 10px;
 }
