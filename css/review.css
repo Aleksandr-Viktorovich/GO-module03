@@ -1,6 +1,18 @@
 .review__avatar {
+  position: relative;
   float: left;
   margin-right: 20px;
+}
+
+.review__avatar:after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
+  border-radius: 140px;
+  z-index: 1;
+  top: 0;
 }
 
 .review__list {

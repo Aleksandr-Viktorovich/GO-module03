@@ -40,6 +40,10 @@
   height: 228px;
 }
 
+.friends__audio:hover {
+  transform: translate(0, 80px);
+}
+
 .friends__karaoke {
   background-image: url("../img/karaoke.png");
   background-repeat: no-repeat;
@@ -59,6 +63,10 @@
   background-repeat: no-repeat;
   width: 380px;
   height: 228px;
+}
+
+.friends__netflix:hover {
+  transform: translate(0, 80px);
 }
 
 .friends__playstation {
