@@ -23,6 +23,12 @@
   font-size: 22px;
   line-height: 50px;
   text-transform: uppercase;
+  transition-duration: .2s;
+  transition-property: color;
+}
+
+.header__link:hover {
+  color: var(--go-Color, #CD06FF);
 }
 
 .header__btn {

@@ -46,6 +46,20 @@
 
 .footer__link-social {
   display: inline-block;
+  transition-duration: .2s;
+  transition-property: color;
+}
+
+.footer__link-social:hover {
+  color: #EADEED;
+}
+
+.footer__link-social:active {
+  color: #EADEED;
+}
+
+.footer__link-social:focus {
+  color: #CD06FF;
 }
 
 .footer__wrapper {
