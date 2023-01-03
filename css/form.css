@@ -9,15 +9,19 @@
   margin: 0 auto;
   flex-wrap: wrap;
   padding: 0;
+  justify-content: space-between;
+}
+.form__date-flex {
+  display: flex;
+  max-width: 300px;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 0 30px;
+  border: none;
 }
 
-.form__input-name {
-  display: block;
-  height: 68px;
-}
-
-.form__input-time {
-  margin-right: 50px;
+.form__date {
+  border: none;
 }
 
 .form__input-label {
@@ -27,7 +31,6 @@
 .form__input-box {
   width: 280px;
   height: 52px;
-  margin-right: 50px;
 }
 
 .form__input-box2 {
@@ -36,21 +39,21 @@
 }
 
 .form__label-box {
-  padding-top: 16px;
+  padding-top: 18px;
+}
+.form__flex-name {
+  padding: 0;
+}
+.form__flex-contacts {
+  padding: 0;
 }
 
-/*.form__wrapper-one {*/
-/*  background-color: #440F51;*/
-/*  padding-top: 60px;*/
-/*}*/
-
 .form__wrapper {
-  /*width: 1080px;*/
   margin: 0 auto;
 }
 
 .form__title {
-  /*border: none;*/
+  border: none;
   padding: 0;
   margin-bottom: 60px;
 }
@@ -164,12 +167,9 @@
 
 .form__man {
   padding-top: 18px;
-  margin-right: 50px;
+
 }
 
-.form__label-surname {
-  margin-right: 50px;
-}
 
 .form__input {
   width: 280px;
@@ -178,11 +178,6 @@
 
 .form__input-date {
   width: 134px;
-  margin-bottom: 36px;
-}
-
-.form__input-contacts {
-  margin-right: 27px;
 }
 
 .form__input-one {
@@ -235,16 +230,10 @@
     line-height: 40px;
     margin-bottom: 25px;
   }
-  .form__man {
-    margin-right: 103px;
-  }
   .form__title-name {
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
-  .form__label-surname {
-    margin-right: 100px;
   }
   .form__title-contacts {
     display: flex;
@@ -265,12 +254,6 @@
   .form__input-two {
     margin-bottom: 19px;
   }
-  .form__input-time {
-    margin-right: 106px;
-  }
-  .form__input-box {
-    margin-right: 100px;
-  }
   .form__btn {
     justify-content: space-between;
   }
@@ -290,7 +273,6 @@
     line-height: 16px;
   }
   .form__button {
-    margin-left: 745px;
     font-size: 18px;
     line-height: 24px;
     padding: 13px 45px;
@@ -299,6 +281,18 @@
 }
 
 @media (max-width: 840px) {
+  .form__date-flex {
+    flex-wrap: nowrap;
+  }
+  .form__label-surname {
+    width: 295px;
+  }
+  .form__input-box {
+    width: 295px;
+  }
+  .form__input-label {
+    width: 295px;
+  }
   .form__title {
     font-size: 24px;
     line-height: 36px;
@@ -319,7 +313,7 @@
     padding: 0;
   }
   .form__input-time {
-    margin-right: 109px;
+    margin-right: 74px;
   }
   .form__input-three {
     width: 295px;
@@ -351,10 +345,86 @@
     line-height: 16px;
   }
   .form__button {
-    margin-left: 403px;
     font-size: 22px;
     line-height: 28px;
     padding: 16px 50px;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .form__flex-date {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__date-flex {
+    flex-wrap: wrap;
+  }
+  .form__input-time {
+     margin-right: 0;
+  }
+  .form__button {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 17px 59px;
+    margin: auto;
+  }
+  .form__input-three {
+    width: 280px;
+  }
+  .form__label-surname {
+    width: 280px;
+  }
+  .form__input-box {
+    width: 280px;
+  }
+  .form__input-label {
+    width: 280px;
+  }
+  .form__input-two {
+    width: 280px;
+  }
+  .form__date-flex {
+    gap: 0 12px;
+    max-width: 280px;
+  }
+  .form__btn {
+    flex-wrap: wrap;
+  }
+  .form__input-btn {
+    margin-bottom: 0;
+  }
+  .form__input-mail {
+    margin-bottom: 40px;
+  }
+  .form__btn-room {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 6px 20px;
+    border-radius: 4px;
+  }
+  .form__title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    gap: 14px;
+  }
+  .form__name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .form__label-kit {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+  .form__kit {
+    margin-bottom: 30px;
+  }
+  .form__btn-vib {
+    padding: 6px 17px;
+  }
+  .form__legeng {
+    text-align: center;
   }
 }
