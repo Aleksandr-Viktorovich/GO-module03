@@ -55,3 +55,54 @@
   content: url(../img/openactive.svg);
 }
 
+@media (max-width: 1100px) {
+  .faq__none {
+    display: none;
+  }
+  .faq__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .faq__list-item {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+  }
+  .faq__list-item:nth-child(2n) {
+    background-color: #fff;
+    color: #000000;
+  }
+  .faq__list-item:nth-child(2n)::after {
+    content: url(../img/open-purple.svg);
+  }
+  .faq__list-item:hover:nth-child(2n)::after {
+    content: url(../img/openhover.svg);
+  }
+
+  .faq__list-item:active:nth-child(2n)::after {
+    content: url(../img/close.svg);
+  }
+}
+
+@media (max-width: 500px) {
+  .faq__title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .faq__list-item {
+    font-size: 12px;
+    line-height: 16px;
+    color: #000;
+    padding: 7px 43px 7px 10px;
+    height: 46px;
+  }
+  .faq__list-item:after {
+    bottom: 0;
+    right: 10px;
+  }
+  .faq__list-item:nth-child(2n)::after {
+    bottom: 0;
+    right: 10px;
+  }
+}
+

@@ -13,6 +13,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px 20px;
+  justify-content: center;
 }
 
 .friends__item {
@@ -74,4 +75,106 @@
   background-repeat: no-repeat;
   width: 380px;
   height: 228px;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 10px;
+  }
+  .friends__title {
+    font-size: 30px;
+    line-height: 40px;
+    width: 650px;
+  }
+  .friends__list {
+    gap: 30px 10px;
+  }
+  .friends__vr{
+    background-image: url("../img/vr1024.jpg");
+    width: 287px;
+    height: 172px;
+  }
+  .friends__audio {
+    background-image: url("../img/audio1024.png");
+    width: 287px;
+    height: 172px;
+  }
+  .friends__karaoke {
+    background-image: url("../img/karaoke1024.png");
+    width: 287px;
+    height: 172px;
+  }
+  .friends__game {
+    background-image: url("../img/game1024.png");
+    width: 287px;
+    height: 172px;
+  }
+  .friends__netflix {
+    background-image: url("../img/netflix1024.png");
+    width: 287px;
+    height: 172px;
+  }
+  .friends__playstation {
+    background-image: url("../img/playstation1024.png");
+    width: 287px;
+    height: 172px;
+  }
+}
+
+@media (max-width: 840px) {
+  .friends__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .container {
+    padding: 0 30px;
+  }
+  .friends__list {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 10px;
+  }
+  .friends__title {
+    font-size: 14px;
+    line-height: 18px;
+    width: 280px;
+  }
+  .friends__list {
+    gap: 10px;
+  }
+  .friends__vr{
+    background-image: url("../img/vr320.png");
+    width: 135px;
+    height: 75px;
+  }
+  .friends__audio {
+    background-image: url("../img/audio320.png");
+    width: 135px;
+    height: 75px;
+  }
+  .friends__karaoke {
+    background-image: url("../img/karaoke320.png");
+    width: 135px;
+    height: 75px;
+  }
+  .friends__game {
+    background-image: url("../img/game320.png");
+    width: 135px;
+    height: 75px;
+  }
+  .friends__netflix {
+    background-image: url("../img/netflix320.png");
+    width: 135px;
+    height: 75px;
+  }
+  .friends__playstation {
+    background-image: url("../img/playstation320.png");
+    width: 135px;
+    height: 75px;
+  }
 }

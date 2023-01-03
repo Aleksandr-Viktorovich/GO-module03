@@ -15,8 +15,9 @@
   <header class="header">
     <div class="header__wrapper">
     <div class="container header__container">
-      <img src="img/logo%20(1).svg" alt="Логотип">
-      <nav>
+      <img class="header__menu" src="img/menu.svg" alt="меню"></img>
+      <img class="header__logo" src="img/logo%20(1).svg" alt="Логотип">
+      <nav class="header__navigation">
       <ul class="header__list">
         <li>
           <a class="header__link" href="#rooms">залы</a>
@@ -52,8 +53,9 @@
           <p class="hero__text-equipment">Новейшая аппаратура</p>
         </div>
           <button type="submit" class="hero__btn">Забронировать</button>
+        <div class="hero__bg"></div>
         <a class="hero__link" href="#">
-          <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="hero__svg" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
             <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white"/>
             <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white"/>
@@ -78,7 +80,7 @@
 
     <section id="rooms" class="rooms">
       <div class="container">
-        <h2 class="title">НАШИ ЗАЛЫ</h2>
+        <h2 class="title rooms__title">НАШИ ЗАЛЫ</h2>
         <ul class="rooms__list">
           <li class="rooms__name rooms-vibe"></li>
           <li class="rooms__name rooms-star"></li>
@@ -90,8 +92,8 @@
 
     <section id="form" class="form">
       <div class="form__wrapper-one">
-      <div class="container">
-        <h2 class="title">ЗАБРОНИРОВАТЬ ЗАЛ ПРОСТО</h2>
+      <div class="container form__container">
+        <h2 class="title form__title">ЗАБРОНИРОВАТЬ ЗАЛ ПРОСТО</h2>
           <form class="form__box" action="https://jsonplaceholder.typicode.com/posts" method="post">
               <fieldset class="form__title form__btn">
                 <legend class="form__name">Выбери зал</legend>
@@ -109,12 +111,11 @@
                 </label>
               </fieldset>
 
-          <div class="form__wrapper">
-            <fieldset class="form__title">
+            <fieldset class="form__title form__kit-box">
               <legend class="form__name">Собери набор развлечений</legend>
 
-              <div class="form__kit-enterteiment">
                 <fieldset class="form__title form__kit">
+                  <div>
                   <legend class="form__kit-title">Приставка:</legend>
                   <label class="form__input-name">
                     <input class="form__input-kit" type="radio" name="console" value="PlayStation">
@@ -132,6 +133,7 @@
                     <input type="radio" name="console" value="Dendy">
                     Dendy
                   </label>
+                  </div>
                 </fieldset>
 
 
@@ -168,48 +170,79 @@
                     VR
                   </label>
                 </fieldset>
-              </div>
+            </fieldset>
 
 
-            <fieldset class="form__title form__title-forms">
-                  <legend class="form__name">Выбери дату и время</legend>
-              <fieldset class="form__title-date">
-                  <label>
+<!--            <fieldset class="form__title form__title-forms">-->
+<!--                  <legend class="form__name">Выбери дату и время</legend>-->
+<!--              <fieldset class="form__title-date">-->
+<!--                  <label>-->
+<!--                    <input class="form__input form__input-date form__input-contacts" type="date" name="date" value="date" required placeholder="Дата">-->
+<!--                  </label>-->
+<!--                  <label>-->
+<!--                    <input class="form__input form__input-date form__input-time" type="time" name="time" value="time" required>-->
+<!--                  </label>-->
+<!--                  <label class="form__man">-->
+<!--                    <input class="form__input form__input-two" type="number" value="amount" name="amount" required placeholder="Сколько человек">-->
+<!--                  </label>-->
+<!--              </fieldset>-->
+<!--            </fieldset>-->
+
+<!--                <div class="form__flex">-->
+<!--              <fieldset class="form__title-name">-->
+<!--                  <label class="form__label">-->
+<!--                    Имя-->
+<!--                    <input class="form__input-name form__input form__input-one form__input-three" type="text" name="name">-->
+<!--                  </label>-->
+<!--                  <label class="form__label">-->
+<!--                    Фамилия-->
+<!--                    <input class="form__input-name form__input form__input-three" type="text" name="surname">-->
+<!--                  </label>-->
+<!--              </fieldset>-->
+
+<!--              <fieldset class="form__title-contacts">-->
+<!--                  <label class="form__label">-->
+<!--                    Телефон-->
+<!--                    <input class="form__input-name form__input form__input-one form__input-two" title="+7___-___-__-__" type="tel" name="phone" required pattern="\+[7]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">-->
+<!--                  </label>-->
+<!--                  <label class="form__input-name form__label">-->
+<!--                    E-mail-->
+<!--                    <input class="form__input-name form__input form__input-two" type="email" name="added">-->
+<!--                  </label>-->
+<!--              </fieldset>-->
+<!--                </div>-->
+<!--            </div>-->
+                <fieldset class="form__flex-date">
+                  <legend>Выбери дату и время</legend>
+                  <label class="form__label-box">
                     <input class="form__input form__input-date form__input-contacts" type="date" name="date" value="date" required placeholder="Дата">
                   </label>
-                  <label>
-                    <input class="form__input form__input-date" type="time" name="time" value="time" required>
+                  <label class="form__label-box">
+                    <input class="form__input form__input-date form__input-time" type="time" name="time" value="time" required>
+                  </label>
+                  <label class="form__input-name">
+                    Имя
+                    <input class="form__input-label form__input-box" type="text" name="name">
+                  </label>
+                  <label class="form__input-name">
+                    Телефон
+                    <input class="form__input-label form__input-box2" title="+7___-___-__-__" type="tel" name="phone" required pattern="\+[7]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
                   </label>
                   <label class="form__man">
                     <input class="form__input form__input-two" type="number" value="amount" name="amount" required placeholder="Сколько человек">
                   </label>
-              </fieldset>
-
-              <fieldset class="form__title-name">
-                  <label>
-                    Имя
-                    <input class="form__input-name form__input form__input-one" type="text" name="name">
-                  </label>
-                  <label>
+                  <label class="form__label form__label-surname">
                     Фамилия
-                    <input class="form__input-name form__input" type="text" name="surname">
-                  </label>
-              </fieldset>
-
-              <fieldset class="form__title-contacts">
-                  <label>
-                    Телефон
-                    <input class="form__input-name form__input form__input-one form__input-two" title="+7___-___-__-__" type="tel" name="phone" required pattern="\+[7]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+                    <input class="form__input-name form__input form__input-three form__input-label" type="text" name="surname">
                   </label>
                   <label class="form__input-name">
                     E-mail
-                    <input class="form__input-name form__input form__input-two" type="email" name="added">
+                    <input class="form__input-name form__input form__input-two form__input-label" type="email" name="added">
                   </label>
-              </fieldset>
-            </fieldset>
-               <button class="form__button" type="submit">Забронировать</button>
-            </fieldset>
-          </div>
+                  <button class="form__button" type="submit">Забронировать</button>
+                </fieldset>
+<!--               -->
+
           </form>
         </div>
       </div>
@@ -217,27 +250,33 @@
 
     <section id="about" class="about">
       <div class="container about__container">
-        <h2 class="title">О НАС</h2>
+        <h2 class="title about__title">О НАС</h2>
+        <div class="about__flex">
         <div class="about__img"></div>
-
         <div class="about__block">
-        <p class="about__quote">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
-        <p class="about__quote">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+        <p class="about__quote about__quote-top">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+        <p class="about__quote about__quote-bot">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
         <blockquote class="go">
           <q class="quote">GAME OVER — это место незабываемых впечатлений</q>
           <p class="about__creator"><cite>Аркадий Абакшин, </cite>создатель игровой территории GAME OVER</p>
         </blockquote>
         </div>
+        </div>
+        <blockquote class="about__go">
+          <q class="quote">GAME OVER — это место незабываемых впечатлений</q>
+          <p class="about__creator"><cite>Аркадий Абакшин, </cite>создатель игровой территории GAME OVER</p>
+        </blockquote>
       </div>
     </section>
 
     <section id="review" class="review">
       <div class="container">
-        <h2 class="title">ОТЗЫВЫ ПОСЕТИТЕЛЕЙ</h2>
+        <h2 class="title title__review">ОТЗЫВЫ ПОСЕТИТЕЛЕЙ</h2>
         <ul class="review__list">
           <li class="review__list-item">
             <figure class="review__avatar">
               <img class="review__img" src="img/maks.png" alt="Макс">
+
               <figcaption class="review__name">Макс Самойлов</figcaption>
             </figure>
             <p class="review__text">Отмечали здесь день рождения с компанией друзей, все было очень                              круто! VR очки это просто бомба, никогда еще я не был в таком полном                           игровом погружении. Сервис на высоте!</p>
@@ -247,7 +286,7 @@
         <ul class="review__list">
           <li class="review__list-item">
             <figure class="review__avatar">
-              <img class="review__img" src="img/oXXXana.png" alt="Оксана">
+              <img  class="review__img" src="img/oXXXana.png" alt="Оксана">
               <figcaption class="review__name">Оксана Григорьева</figcaption>
             </figure>
             <p class="review__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений!</p>
@@ -276,13 +315,13 @@
 
     <section class="faq">
       <div class="container">
-        <h2 class="title">ЧАСТЫЕ ВОПРОСЫ</h2>
+        <h2 class="title faq__title">ЧАСТЫЕ ВОПРОСЫ</h2>
         <ul class="faq__list">
           <li class="faq__list-item">Можно ли забронировать комнату онлайн?</li>
           <li class="faq__list-item">Могут ли мне вернуть деньги за бронь?</li>
           <li class="faq__list-item">Какая комната самая популярная</li>
           <li class="faq__list-item">Как получить VIP карту?</li>
-          <li class="faq__list-item">Какая комната самая популярная</li>
+          <li class="faq__list-item faq__none">Какая комната самая популярная</li>
         </ul>
       </div>
     </section>
@@ -290,7 +329,7 @@
 
   <footer id="footer" class="footer">
    <div class="container">
-    <h2 class="title">КОНТАКТЫ</h2>
+    <h2 class="title footer__title">КОНТАКТЫ</h2>
      <div class="footer__wrapper">
        <div>
       <ul class="footer__contacts-list">
@@ -340,9 +379,9 @@
            </li>
          </ul>
        </div>
-     <div class="footer__map">
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1667.8903768367456!2d87.13614278670195!3d53.75827769884668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x918292ee31879e5b!2zNTPCsDQ1JzMwLjIiTiA4N8KwMDgnMTguNCJF!5e0!3m2!1sru!2sru!4v1670235672692!5m2!1sru!2sru" width="680" height="274" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div>
+     <figure class="footer__map">
+       <img src="img/map.jpg" alt="карта">
+     </figure>
      </div>
      <div class="footer__copyright">
        <p class="footer__text">© Game Over, 2022</p>

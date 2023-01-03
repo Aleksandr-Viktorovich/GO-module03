@@ -1,20 +1,56 @@
 .form {
-
+  background-color: #440F51;
   padding-bottom: 60px;
 }
 
-.form__wrapper-one {
-  background-color: #440F51;
-  padding-top: 60px;
+.form__flex-date {
+  display: flex;
+  max-width: 980px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
+.form__input-name {
+  display: block;
+  height: 68px;
+}
+
+.form__input-time {
+  margin-right: 50px;
+}
+
+.form__input-label {
+  display: block;
+}
+
+.form__input-box {
+  width: 280px;
+  height: 52px;
+  margin-right: 50px;
+}
+
+.form__input-box2 {
+  width: 300px;
+  height: 52px;
+}
+
+.form__label-box {
+  padding-top: 16px;
+}
+
+/*.form__wrapper-one {*/
+/*  background-color: #440F51;*/
+/*  padding-top: 60px;*/
+/*}*/
+
 .form__wrapper {
-  width: 1080px;
+  /*width: 1080px;*/
   margin: 0 auto;
 }
 
 .form__title {
-  border: none;
+  /*border: none;*/
   padding: 0;
   margin-bottom: 60px;
 }
@@ -77,6 +113,13 @@
   flex-direction: column;
 }
 
+.form__kit-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
 .form__kit-title {
   margin-bottom: 23px;
   font-weight: 700;
@@ -115,10 +158,17 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  padding-top: 3px;
+  margin-bottom: 40px;
 }
 
 .form__man {
-  display: block;
+  padding-top: 18px;
+  margin-right: 50px;
+}
+
+.form__label-surname {
+  margin-right: 50px;
 }
 
 .form__input {
@@ -140,11 +190,11 @@
 }
 
 .form__input-two {
-  width: 300px;
+  width: 298px;
 }
 
 .form__button {
-  padding: 16px 50px;
+  padding: 16px 46px;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
@@ -152,8 +202,7 @@
   color: var(--goColor, #6C0287);;
   border-radius: 10px;
   border: 3px solid transparent;
-  margin-left: 780px;
-  margin-bottom: 72px;
+  margin-left: auto;
   transition-duration: .4s;
   transition-property: background-color, color;
 }
@@ -178,4 +227,134 @@
 .form__input:focus {
   background-color: #FFFFFF;
   border: 2px solid var(--go-Color, #CD06FF);
+}
+
+@media (max-width: 1100px) {
+  .form__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  .form__man {
+    margin-right: 103px;
+  }
+  .form__title-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form__label-surname {
+    margin-right: 100px;
+  }
+  .form__title-contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__name {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 26px;
+  }
+  .form__input {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .form__input-label {
+    width: 251px;
+  }
+  .form__input-two {
+    margin-bottom: 19px;
+  }
+  .form__input-time {
+    margin-right: 106px;
+  }
+  .form__input-box {
+    margin-right: 100px;
+  }
+  .form__btn {
+    justify-content: space-between;
+  }
+  .form__btn-room {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .form__kit-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .form__kit-enterteiment {
+    justify-content: space-around;
+  }
+  .form__label {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .form__button {
+    margin-left: 745px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 13px 45px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 840px) {
+  .form__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+  .form__kit-box {
+    flex-wrap: wrap;
+    gap: 32px 106px;
+    justify-content: flex-start;
+  }
+  .form__title-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form__title-date {
+    display: flex;
+    padding: 0;
+  }
+  .form__input-time {
+    margin-right: 109px;
+  }
+  .form__input-three {
+    width: 295px;
+  }
+  .form__title-contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__flex {
+    display: flex;
+    gap: 109px;
+  }
+  .form__btn {
+    justify-content: space-between;
+  }
+  .form__btn-room {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .form__kit-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .form__kit-enterteiment {
+    justify-content: space-around;
+  }
+  .form__label {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .form__button {
+    margin-left: 403px;
+    font-size: 22px;
+    line-height: 28px;
+    padding: 16px 50px;
+    margin-bottom: 0;
+  }
 }
