@@ -95,27 +95,27 @@
     height: 172px;
   }
   .friends__audio {
-    background-image: url("../img/audio1024.png");
+    background-image: url("../img/audio1024.jpg");
     width: 287px;
     height: 172px;
   }
   .friends__karaoke {
-    background-image: url("../img/karaoke1024.png");
+    background-image: url("../img/karaoke1024.jpg");
     width: 287px;
     height: 172px;
   }
   .friends__game {
-    background-image: url("../img/game1024.png");
+    background-image: url("../img/game1024.jpg");
     width: 287px;
     height: 172px;
   }
   .friends__netflix {
-    background-image: url("../img/netflix1024.png");
+    background-image: url("../img/netflix1024.jpg");
     width: 287px;
     height: 172px;
   }
   .friends__playstation {
-    background-image: url("../img/playstation1024.png");
+    background-image: url("../img/playstation1024.jpg");
     width: 287px;
     height: 172px;
   }
@@ -148,32 +148,32 @@
     gap: 10px;
   }
   .friends__vr{
-    background-image: url("../img/vr320.png");
+    background-image: url("../img/vr320.jpg");
     width: 135px;
     height: 75px;
   }
   .friends__audio {
-    background-image: url("../img/audio320.png");
+    background-image: url("../img/audio320.jpg");
     width: 135px;
     height: 75px;
   }
   .friends__karaoke {
-    background-image: url("../img/karaoke320.png");
+    background-image: url("../img/karaoke320.jpg");
     width: 135px;
     height: 75px;
   }
   .friends__game {
-    background-image: url("../img/game320.png");
+    background-image: url("../img/game320.jpg");
     width: 135px;
     height: 75px;
   }
   .friends__netflix {
-    background-image: url("../img/netflix320.png");
+    background-image: url("../img/netflix320.jpg");
     width: 135px;
     height: 75px;
   }
   .friends__playstation {
-    background-image: url("../img/playstation320.png");
+    background-image: url("../img/playstation320.jpg");
     width: 135px;
     height: 75px;
   }

@@ -1,6 +1,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -82,11 +83,7 @@ section {
   margin-bottom: 50px;
 }
 
-/*@media (max-width: 1100px) {*/
-/*  .container {*/
-/*    max-width: 904px;*/
-/*  }*/
-/*}*/
+
 
 @media (max-width: 500px) {
   section {
