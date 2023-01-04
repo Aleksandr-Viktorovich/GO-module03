@@ -113,6 +113,13 @@
   top: -23px;
 }
 
+/*.hero__svg:hover {*/
+/*  fill: #fff;*/
+/*}*/
+/*.hero__svg rect:hover {*/
+/*  fill: #6C0287;*/
+/*}*/
+
 @media (max-width: 1100px) {
   .hero__container {
     margin-bottom: 0;

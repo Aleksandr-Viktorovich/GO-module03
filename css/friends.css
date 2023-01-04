@@ -39,11 +39,12 @@
   background-repeat: no-repeat;
   width: 380px;
   height: 228px;
+  transform: translate(0, 40px)
 }
 
-.friends__audio:hover {
-  transform: translate(0, 80px);
-}
+/*.friends__audio:hover {*/
+/*  transform: translate(0, 80px);*/
+/*}*/
 
 .friends__karaoke {
   background-image: url("../img/karaoke.png");
@@ -64,11 +65,12 @@
   background-repeat: no-repeat;
   width: 380px;
   height: 228px;
+  transform: translate(0, 40px)
 }
 
-.friends__netflix:hover {
-  transform: translate(0, 80px);
-}
+/*.friends__netflix:hover {*/
+/*  transform: translate(0, 80px);*/
+/*}*/
 
 .friends__playstation {
   background-image: url("../img/playstation.png");

@@ -58,11 +58,16 @@
 .about__creator:before {
   position: absolute;
   content: url("../img/arkadiy.png");
-  right: 282px;
+  right: 348px;
+  top: -24px;
 }
 
 .about__go {
   display: none;
+}
+
+.go {
+  margin: 0;
 }
 
 @media (max-width: 1100px) {
@@ -141,6 +146,10 @@
     width: 225px;
     padding-left: 0;
     margin-left: 436px;
+  }
+  .about__creator:before {
+    right: 253px;
+    top: 0px;
   }
   .about__container {
     padding: 0 40px;
