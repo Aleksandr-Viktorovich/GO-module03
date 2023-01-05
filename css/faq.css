@@ -84,7 +84,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 675px) {
   .faq__title {
     font-size: 14px;
     line-height: 18px;
@@ -105,4 +105,3 @@
     right: 10px;
   }
 }
-

@@ -67,6 +67,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .rooms__title {
+    padding-top: 40px;
+  }
+}
+
 @media (max-width: 840px) {
   .rooms__list {
     justify-content: center;
@@ -96,3 +102,5 @@
     height: 200px;
   }
 }
+
+
